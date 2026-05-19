@@ -1,3 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NEBOSH Certificate Validation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+background:#ececec;
+display:flex;
+justify-content:center;
+}
+
+.container{
+position:relative;
+width:772px;
+max-width:100%;
+cursor:pointer;
+}
+
+.container img{
+width:100%;
+display:block;
+}
+
+.text{
+position:absolute;
+font-family:'Arimo', sans-serif;
+font-size:26px;
+color:#4a4a4a;
+font-weight:400;
+}
+
+/* Learner Name */
+
 .name{
 top:60.9%;
 left:79%;
@@ -7,20 +49,59 @@ line-height:1.15;
 text-align:left;
 }
 
+/* Learner Number */
+
 .number{
-top:65.0%;
+top:65%;
 left:55%;
 transform:translateX(-50%);
 }
 
+/* Date Awarded */
+
 .date{
-top:75.0%;
+top:75%;
 left:50%;
 transform:translateX(-50%);
 }
+
+/* Certificate Log Number */
 
 .code{
 top:79.2%;
 left:78%;
 transform:translateX(-50%);
 }
+
+@media(max-width:768px){
+
+.text{
+font-size:3.4vw;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container"
+onclick="window.location.href='https://www.nebosh.org.uk/'">
+
+<img src="nebosh-template.png.png">
+
+<div class="text name">
+Hussein Hosny Mohamed Helal
+</div>
+
+<div class="text number">
+00694979
+</div>
+
+<div class="text date">
+20/04/2026
+</div>
+
+<div class="text code">
+00695637/169716
